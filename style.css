@@ -1,27 +1,101 @@
-
-
-#main{
-    padding: 10px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: cornflowerblue;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    height: 100%;
 }
-#btn{
-padding: 5px 10px;
-width:60px;
-border-radius: 10px;
-font-size: 20px;
-font-weight: 700;
-background-color: salmon;
+#card{
+    height: 400px;
+    width: 400px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 62%, rgba(148,187,233,1) 100%);
+    
+
 }
-#dark{
-    padding: 5px 10px;
-    width:137px;
-    border-radius: 76px;
-    font-size: 20px;
+#card2{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    
+    
+}
+#card2 img{
+    height: 170px;
+    width: 400px;
+    padding: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+ h1{
+    padding-left: 90px;
     font-weight: 700;
-    background-color: salmon;
+     gap: 10px;    
+}
+h2{
+    padding-left: 90px;
+    font-weight: 700;
+    
+}
+#button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+
+}
+#add{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+@media (max-width:600px) {
+    #card{
+        height: 370px;
+        width: 270px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 62%, rgba(148,187,233,1) 100%);
+        
+    
     }
+    #card2{
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        
+        
+    }
+    #card2 img{
+        height: 170px;
+        width: 270px;
+        padding: 10px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    h1{
+        padding-left: 40px;
+        font-weight: 700;
+         gap: 10px;    
+    }
+    h2{
+        padding-left: 40px;
+        font-weight: 700;
+        
+    }
+}
