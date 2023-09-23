@@ -1,35 +1,20 @@
-let a= document.querySelector("h1")
-console.log(a);
-a.innerHTML = "u r Changed now "
-a.style.color="yellow"
-a.style.backgroundColor="salmon"
-a.style.fontSize="80px"
-a.style.border="30px solid grey"
-let abc=0
-let bcd=0
-let btn=document.getElementById("btn")
-let main= document.getElementById("main")
- btn.addEventListener("click",function(){
-    if(abc == 0){
-    a.style.backgroundColor="black"
-    abc=1
-    btn.innerHTML="OFF"
+var istatus = document.querySelector("h2")
+var abc = document.querySelector("#add")
+var check = 0
+abc.addEventListener("click",function(){
+    if (check == 0) {
+        istatus.innerHTML = "You are now Friends"
+        istatus.style.color = "green"
+        check = 1
+        
+         alert("You are  now Friends")
+        abc.innerHTML = "Remove Friend"
+    console.log("abc")
     }
-    else{
-        a.style.backgroundColor="salmon"
-        btn.innerHTML="ON"
-abc=0  
-  }
- })
- dark.addEventListener("click",function(){
-    if(bcd == 0){
-    main.style.backgroundColor="black"
-    bcd=1
-    dark.innerHTML="Normal"
+    else {
+        istatus.innerHTML = "Stranger"
+        istatus.style.color = "red"
+        abc.innerHTML = "Add Friend"
+        check = 0
     }
-    else{
-        main.style.backgroundColor="transparent"
-        dark.innerHTML="Dark Theme"
-bcd=0  
-  }
- })
+})
